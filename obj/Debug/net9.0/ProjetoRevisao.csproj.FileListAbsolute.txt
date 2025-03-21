@@ -12,3 +12,4 @@ C:\Users\FIC\Desktop\Ingryd\exercicios\ProjetoRevisao\obj\Debug\net9.0\refint\Pr
 C:\Users\FIC\Desktop\Ingryd\exercicios\ProjetoRevisao\obj\Debug\net9.0\ProjetoRevisao.pdb
 C:\Users\FIC\Desktop\Ingryd\exercicios\ProjetoRevisao\obj\Debug\net9.0\ProjetoRevisao.genruntimeconfig.cache
 C:\Users\FIC\Desktop\Ingryd\exercicios\ProjetoRevisao\obj\Debug\net9.0\ref\ProjetoRevisao.dll
+C:\Users\FIC\Desktop\Ingryd\exercicios\ProjetoRevisao\obj\Debug\net9.0\ProjetoRevisao.sourcelink.json

@@ -89,21 +89,56 @@
 
 //1.Inserir as notas de um aluno. (Cada aluno tem 5 notas)
 
-int[] notas = new int[5];
-int soma = 0;
-for (int i = 0; i < notas.Length; ++i)
-{
-    Console.WriteLine(" Por favor informe a nota: ");
-    notas[i]= int.Parse(Console.ReadLine());
-}
-for (int i = 0;i < notas.Length; ++i)
-{
-    Console.WriteLine(notas[i]);
-}
-for (int i = 0; i < notas.Length; ++i)
-{
-    soma = notas[i] + soma;
-}
-Console.WriteLine(soma);
 
+
+
+
+try
+{
+    
+    int[] notas = new int[5];
+    int soma = 0;
+    int Media = 0;
+    for (int i = 0; i < notas.Length; ++i)
+    {
+        Console.WriteLine(" Por favor informe a nota: ");
+        notas[i] = int.Parse(Console.ReadLine());
+
+        if (notas[i] < 0)
+        {
+            Console.WriteLine("Essa nota  não e valida. ");
+        }
+        if (notas[i] > 10)
+        {
+            Console.WriteLine("Essa nota não e valida");
+        }
+    }
+    for (int i = 0; i < notas.Length; ++i)
+    {
+        Console.WriteLine(notas[i]);
+    }
+    for (int i = 0; i < notas.Length; ++i)
+    {
+        soma = notas[i] + soma;
+    }
+    Console.WriteLine(soma);
+
+    Media = soma / notas.Length;
+
+    Console.WriteLine("Sua media e: " + Media);
+
+    if (Media > 7)
+    {
+        Console.WriteLine("Parabens, voce foi aprovado! ");
+    }
+    else
+    {
+        Console.WriteLine("Sinto muito, voce foi reprovado.");
+    }
+
+}
+catch (FormatException ex)
+{
+    Console.WriteLine(" Apenas numeros são aceitos ");
+}
 
